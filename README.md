@@ -7,11 +7,11 @@ TTF-E is a dynamic rule engine used to calculate which premium matches best with
 ### Output
 
 The engine can be run in 3 different modes, each modifying the output of the requests:
-1. `EngineConfig.Mode = EngineOutputMode.AllMatchingRules`
+* `EngineConfig.Mode = EngineOutputMode.AllMatchingRules`
 Using this mode will return all matches that can be made for a given input. When multiple calculations are defines per X (S, R, T) then all possible calculations will be returned.
-1. `EngineConfig.Mode = EngineOutputMode.AllMatchingRulesHighestPrioCalculation`
+* `EngineConfig.Mode = EngineOutputMode.AllMatchingRulesHighestPrioCalculation`
 This mode is similar to AllMatchingRules, but will only return one output per X. Only the calculation added last will be used for a given X. A certain input can still lead to multiple outputs, when more then one X is possible.
-1. `EngineConfig.Mode = EngineOutputMode.FirstMatchingRuleOnly`
+* `EngineConfig.Mode = EngineOutputMode.FirstMatchingRuleOnly`
 The only mode that will always return just one result. This will be the first match found for X, using the first X-calculation match.
 
 ### ttfspec
