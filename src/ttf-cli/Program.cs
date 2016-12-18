@@ -25,6 +25,5 @@ namespace Ttf.Server.SelfHosted
 
             host.Run();
         }
-
    }
 }

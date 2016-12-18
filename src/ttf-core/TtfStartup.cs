@@ -14,7 +14,7 @@ namespace Ttf.Server.Core
 
         public static void ConfigureMapper(IConfigurationRoot configuration)
         {
-            EngineConfig.AllMatchingRules = true;
+            EngineConfig.Mode = EngineOutputMode.AllMatchingRules;
             AppConfig = configuration;
 
             ParseTtfSpecFiles();

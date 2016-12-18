@@ -4,13 +4,13 @@
     {
         public static IEngineStrategy GetStrategy()
         {
-            if (EngineConfig.FirstMatchingRuleOnly)
+            if (EngineConfig.IsFirstMatchingRuleOnly)
                 return new FirstMatchingRuleOnlyStrategy();
 
-            if (EngineConfig.AllMatchingRules)
+            if (EngineConfig.IsAllMatchingRules)
                 return new AllMatchingRulesStrategy();
 
-            if (EngineConfig.AllMatchingRulesHighestPrioCalculation)
+            if (EngineConfig.IsAllMatchingRulesHighestPrioCalculation)
                 return new AllMatchingRulesHighestPrioCalculationStrategy();
 
             return new FirstMatchingRuleOnlyStrategy();
