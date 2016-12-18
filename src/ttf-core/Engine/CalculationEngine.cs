@@ -32,7 +32,7 @@ namespace Ttf.Server.Core.Engine
             _strategy = EngineStrategyFactory.GetStrategy();
         }
 
-        public CalculationEngine(CalculationEngine existing, string version) : this(version)
+        public CalculationEngine(CalculationEngine parent, string version) : this(version)
         {
             Rules = existing.Rules.ToImmutableList();
             Calcs = existing.Calcs.ToImmutableList();
