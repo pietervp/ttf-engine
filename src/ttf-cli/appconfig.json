@@ -1,0 +1,5 @@
+﻿{
+  "url-endpoint": "http://localhost:8080/",
+  "ttf-extension": ".ttfspec",
+  "ttf-folder": "./specs/"
+}

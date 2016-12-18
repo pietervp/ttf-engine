@@ -1,0 +1,5 @@
+﻿inherits base
+A && B && !C => X = T
+A && !B && C => X = S
+
+X = S => Y = F + D + (D * E / 100)
