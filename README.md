@@ -2,6 +2,17 @@
 
 TTF-E is a dynamic rule engine used to calculate which premium matches best with a certain parameters. Rules are based on a DSL called 'ttfspec'. This allows business analysts to reconfigure the entire server without intervention of dev. The engine is exposed by a single http endpoint (api/calculator), future development could add restfull access to the rules, to allow adding / removing rules on the fly. This prototype does not include authentication of any kind, and should only be used for educational purposes.
 
+## Usage
+
+The solution contains 2 runnable projects:
+* `ttf-web` is a .Net Core webapp, which defaults to localhost/. 
+* `ttf-cli` is a .Net Core console application, using self-hosting to host the App. (change appconfig.json to alter hostname / port)
+
+To test the API, use following URI pattern: http://localhost/api/calculator/base/110/?d=1&e=2&f=3
+Where 'base' is the name of the spec you want to use, and 110 is the boolean combination of a, b & c.
+                                                                            
+Both solutions are based on the NancyFx web framework, which depends on (auto-discovered) modules to serve the content.
+
 ## Configuration
 
 ### Output
