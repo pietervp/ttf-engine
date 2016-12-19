@@ -1,0 +1,2 @@
+﻿inherits base
+X = R => Y = 2*D + (D * E / 100)
